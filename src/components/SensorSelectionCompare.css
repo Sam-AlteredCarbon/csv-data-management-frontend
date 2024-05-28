@@ -1,0 +1,39 @@
+.selection-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  margin-top: 20px;
+}
+
+.selection-group {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 10px; /* Provides space between elements */
+}
+
+h3 {
+  margin: 0 10px 0 0;
+  white-space: nowrap; /* Keeps the label on one line */
+}
+
+select {
+  padding: 8px;
+  margin-right: 10px;
+}
+
+@media (max-width: 768px) {
+  .selection-group {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  h3 {
+    margin-bottom: 5px;
+  }
+
+  select {
+    width: 100%; /* Full width on smaller screens */
+  }
+}

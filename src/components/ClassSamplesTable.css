@@ -1,0 +1,31 @@
+.table-container {
+    overflow-x: auto; /* Enables horizontal scrolling */
+    margin: 20px 0;
+}
+
+table {
+    width: 100%; /* Responsive table width */
+    border-collapse: collapse; /* Ensures borders between cells are merged */
+    margin: 20px 0; /* Adds spacing around the table */
+}
+
+th, td {
+    border: 1px solid #ccc; /* Adds subtle borders to your cells */
+    padding: 8px; /* Adds padding inside cells */
+    text-align: left; /* Aligns text to the left */
+    font-size: 20px; /* Adjust font size for readability */
+}
+
+th {
+    background-color: #f4f4f4; /* Light grey background for headers */
+}
+
+tr:hover {
+    background-color: #e9e9e9; /* Highlight rows on hover */
+}
+
+.highlighted {
+    background-color: #4CAF50; /* Green background for highlight */
+    color: white; /* White text for better contrast */
+    cursor: pointer;
+}

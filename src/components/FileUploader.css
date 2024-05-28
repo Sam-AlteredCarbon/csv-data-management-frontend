@@ -1,0 +1,23 @@
+.container {
+  width: 100%;
+  text-align: center;
+  padding: 20px;
+}
+
+.dropzone {
+  border: 2px dashed #007bff;
+  border-radius: 5px;
+  padding: 20px;
+  cursor: pointer;
+  color: #0284c7;
+  background-color: #f9fafb;
+}
+
+.dropzone:focus {
+  outline: none;
+}
+
+ul {
+  list-style-type: none;
+  padding: 0;
+}

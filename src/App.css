@@ -2,6 +2,8 @@
   text-align: center;
 }
 
+
+
 .App-logo {
   height: 40vmin;
   pointer-events: none;
@@ -35,4 +37,86 @@
   to {
     transform: rotate(360deg);
   }
+}
+
+.main {
+    padding: 20px;
+}
+
+.file-upload {
+    margin: 20px;
+}
+
+.sensor-selection {
+    margin: 20px;
+}
+
+.time-series-chart {
+    margin: 20px;
+}
+
+.class-filter {
+    margin: 20px;
+}
+
+.class-filter div {
+    margin: 5px 0;
+}
+
+.transformation-selector {
+    margin: 20px;
+}
+
+.transformation-selector select, .transformation-selector button {
+    margin: 10px;
+}
+
+body {
+    font-family: 'Arial', sans-serif; /* Modern font */
+    margin: 20px;
+    background-color: #f4f4f4; /* Light grey background for slight contrast */
+}
+
+.header, .content, .charts {
+    margin-bottom: 20px; /* Spacing between sections */
+}
+
+.file-upload, .selectors {
+    background: white;
+    padding: 20px;
+    border-radius: 8px; /* Rounded corners for modern look */
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1); /* Subtle shadow for depth */
+}
+
+.selectors {
+    display: flex;
+    justify-content: space-between; /* Align dropdowns evenly */
+}
+
+.chart-container {
+    display: flex;
+    justify-content: space-between; /* Space charts evenly */
+}
+
+.chart {
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+    width: 48%; /* Each chart takes up less than half of the container width */
+    transition: box-shadow 0.3s ease; /* Smooth transition for the shadow */
+}
+
+.active-chart {
+    box-shadow: 0 0 15px rgba(0, 0, 255, 0.5); /* Blue glow for active chart */
+}
+/* Responsive design for smaller screens */
+@media (max-width: 768px) {
+    .chart-container {
+        flex-direction: column;
+    }
+
+    .chart {
+        width: 100%; /* Full width on smaller screens */
+        margin-bottom: 20px;
+    }
 }
